@@ -2,6 +2,7 @@ from sklearn.base import BaseEstimator
 import numpy as np
 import pandas as pd
 #from sklearn.base import RegressorMixin
+#did scenario udate work?
 
 class MyRandomRegressor(BaseEstimator):
     """This model predicts random values between the mininimum and the maximum of y"""
