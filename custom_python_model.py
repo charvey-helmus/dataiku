@@ -1,3 +1,4 @@
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.base import BaseEstimator
 import numpy as np
 import pandas as pd
@@ -25,3 +26,19 @@ class MyNullRegressor(BaseEstimator):
         # Give back the mean of y, in the same
         # length as the number of X observations
         return pd.Series(np.ones(X.shape[0]) * self.y_bar_)
+    
+    
+class AdaBoostModel(BaseEstimator):
+	def __init__(self):
+		self.model = AdaBoostClassifier(n_estimators=100,learning_rate=0.1,random_state=0)
+
+	def fit(self, X, y):
+		self.model.fit(X,y)
+		self.classes_ = self.model.classes_
+		return None
+
+	def predict(self, X):
+		return self.model.predict(X)
+
+	def predict_proba(self, X):
+		return self.model.predict_proba(X)
