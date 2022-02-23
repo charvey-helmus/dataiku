@@ -91,17 +91,23 @@
       "evaluationDataset:dataset-name"
     ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
     "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645573106727
+    "lastModifiedOn": 1645576850981
   },
   "creationTag": {
     "versionNumber": 0,
