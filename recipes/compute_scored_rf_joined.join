@@ -154,7 +154,7 @@
       }
     }
   },
-  "engineType": "SPARK",
+  "engineType": "DSS",
   "virtualInputs": [
     {
       "preFilter": {
@@ -184,8 +184,7 @@
         "columns": [
           {
             "name": "customer_id",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "age",
@@ -197,28 +196,23 @@
           },
           {
             "name": "gender",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "data_source",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "ip",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "ip_geopoint",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "ip_country_code",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "pages_visited",
