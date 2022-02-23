@@ -3,16 +3,32 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "quick start": {},
-    "downloads": {},
-    "Machine learning": {},
+    "quick start": {
+      "color": "#77bec2"
+    },
+    "downloads": {
+      "color": "#de1ea5"
+    },
+    "Machine learning": {
+      "color": "#77bec2"
+    },
     "imported": {
       "color": "#263238"
     },
-    "recipe-editor": {},
-    "tutorial": {},
-    "classification": {},
-    "section:Quick Start": {},
-    "academy": {}
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
+    "tutorial": {
+      "color": "#FFD83D"
+    },
+    "classification": {
+      "color": "#123883"
+    },
+    "section:Quick Start": {
+      "color": "#00a55a"
+    },
+    "academy": {
+      "color": "#d66b9b"
+    }
   }
 }
