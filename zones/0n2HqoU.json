@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "target_feedback",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recipe_from_notebook_bin_revenue",
       "objectType": "RECIPE"
     }

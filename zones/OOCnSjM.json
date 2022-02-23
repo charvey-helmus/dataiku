@@ -49,6 +49,10 @@
     {
       "objectId": "test_scored",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "target_feedback",
+      "objectType": "DATASET"
     }
   ],
   "shared": [
