@@ -1,5 +1,5 @@
 {
-  "type": "GCS",
+  "type": "Filesystem",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645571721825
+    "lastModifiedOn": 1645576419934
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,11 +74,8 @@
   },
   "tags": [],
   "params": {
-    "bucket": "dev_design_personal",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "evaluation_data",
-    "connection": "gcs",
-    "path": "/dataiku/${projectKey}/evaluation_data",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/evaluation_data",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

@@ -1,5 +1,5 @@
 {
-  "type": "GCS",
+  "type": "Filesystem",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645571596565
+    "lastModifiedOn": 1645576419972
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,11 +74,8 @@
   },
   "tags": [],
   "params": {
-    "bucket": "dev_design_personal",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "test_scored",
-    "connection": "gcs",
-    "path": "/dataiku/${projectKey}/test_scored",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/test_scored",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
