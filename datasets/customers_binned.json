@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576404522
+    "lastModifiedOn": 1645576667624
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,8 +61,7 @@
     "columns": [
       {
         "name": "customer_id",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "age",
@@ -74,28 +73,23 @@
       },
       {
         "name": "gender",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "data_source",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "ip",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "ip_geopoint",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "ip_country_code",
-        "type": "string",
-        "maxLength": 16200
+        "type": "string"
       },
       {
         "name": "pages_visited",
@@ -110,7 +104,7 @@
         "type": "double"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
