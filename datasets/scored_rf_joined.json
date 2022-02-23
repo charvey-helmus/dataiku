@@ -1,5 +1,5 @@
 {
-  "type": "BigQuery",
+  "type": "PostgreSQL",
   "managed": true,
   "checklists": {
     "checklists": []
@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645571825160
+    "lastModifiedOn": 1645576404683
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,18 +43,14 @@
   },
   "tags": [],
   "params": {
-    "useBigQueryPartitioning": false,
-    "bigQueryPartitioningType": "DATE",
-    "bigQueryPartitioningRangeStart": 0,
-    "bigQueryPartitioningRangeEnd": 0,
-    "bigQueryPartitioningRangeInterval": 0,
-    "connection": "bigquery",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "Postgresql_loc",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_scored_rf_joined",
-    "schema": "dev_design",
+    "schema": "DK",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",

@@ -1,5 +1,5 @@
 {
-  "type": "BigQuery",
+  "type": "PostgreSQL",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645570623434
+    "lastModifiedOn": 1645576404492
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,18 +74,14 @@
   },
   "tags": [],
   "params": {
-    "useBigQueryPartitioning": false,
-    "bigQueryPartitioningType": "DATE",
-    "bigQueryPartitioningRangeStart": 0,
-    "bigQueryPartitioningRangeEnd": 0,
-    "bigQueryPartitioningRangeInterval": 0,
-    "connection": "bigquery",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "Postgresql_loc",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_customers_data_prepared",
-    "schema": "dev_design",
+    "schema": "DK",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
