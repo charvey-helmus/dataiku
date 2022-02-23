@@ -58,8 +58,9 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
-        "preventOverride": false
+        "mode": "EXPLICIT_ENV",
+        "preventOverride": false,
+        "envName": "py36_visual_ml"
       },
       "r": {
         "mode": "INHERIT",
@@ -184,11 +185,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576274690
+    "lastModifiedOn": 1645576532670
   },
   "creationTag": {
     "versionNumber": 0,
