@@ -1,0 +1,67 @@
+{
+  "displayName": "Compare visual to code",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "comparedModels": [
+    {
+      "smartId": "ME-*-E83tFP66-aZvKU9M2W5ZE",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "ME-*-sngoA4ns-sajba83TgfWl",
+      "isSelected": true,
+      "isChampion": false
+    }
+  ],
+  "displayParams": {
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "evaluation:date",
+    "yLabels": [
+      "evaluationDataset:dataset-name"
+    ],
+    "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "tfreckmann"
+    },
+    "lastModifiedOn": 1645573114024
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tfreckmann"
+    },
+    "lastModifiedOn": 1645573098587
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

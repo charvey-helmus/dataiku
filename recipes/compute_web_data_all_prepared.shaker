@@ -1,0 +1,116 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "RANDOM_FIXED_NB_EXACT",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoIPResolver",
+      "params": {
+        "inCol": "ip",
+        "extract_country": false,
+        "extract_countrycode3": false,
+        "extract_city": false,
+        "extract_latlng": false,
+        "extract_countrycode": true,
+        "extract_postalcode": false,
+        "extract_timezone": false,
+        "outColPrefix": "ip_",
+        "extract_continentcode": false,
+        "extract_region": false,
+        "extract_geopoint": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "new_visitors",
+            "to": "testing"
+          },
+          {
+            "from": "last_year",
+            "to": "training"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "data_source"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "ss": 100,
+    "ip_region": 190,
+    "source_dataset": 148,
+    "ip_country_code": 128,
+    "campain": 100,
+    "ip": 120,
+    "original_dataset": 135,
+    "ip_country": 141,
+    "is_id_ends_d": 105,
+    "data_source": 127,
+    "pages_visited": 113,
+    "ip_city": 120,
+    "campaign": 100,
+    "customer_id": 127,
+    "ip_geopoint": 190,
+    "ip_region_hierarchy": 190,
+    "ip_region_code": 120
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

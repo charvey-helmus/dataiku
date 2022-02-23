@@ -1,0 +1,257 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {},
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST",
+        "enabled": false
+      },
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "customer_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "customer_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "customer_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "age",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "price_first_item_purchased",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "gender",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "data_source",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "ip",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "ip_geopoint",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "ip_country_code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "pages_visited",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "campaign",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "high_value",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "prediction",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "proba_False",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "proba_True",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "prediction_feedback",
+      "type": "bigint",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {
+          "target_feedback": {
+            "cache": false,
+            "repartition": 10
+          },
+          "scored_rf": {
+            "cache": false,
+            "repartition": 10
+          }
+        }
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "engineType": "SPARK",
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "scored_rf",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "target_feedback",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "customer_id",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "age",
+            "type": "bigint"
+          },
+          {
+            "name": "price_first_item_purchased",
+            "type": "double"
+          },
+          {
+            "name": "gender",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "data_source",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "ip",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "ip_geopoint",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "ip_country_code",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "pages_visited",
+            "type": "double"
+          },
+          {
+            "name": "campaign",
+            "type": "boolean"
+          },
+          {
+            "name": "high_value",
+            "type": "double"
+          },
+          {
+            "name": "prediction",
+            "type": "double"
+          },
+          {
+            "name": "proba_False",
+            "type": "double"
+          },
+          {
+            "name": "proba_True",
+            "type": "double"
+          },
+          {
+            "name": "prediction_feedback",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}

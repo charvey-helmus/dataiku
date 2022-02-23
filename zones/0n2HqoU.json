@@ -1,0 +1,68 @@
+{
+  "name": "Data preparation",
+  "color": "#8C2DA7",
+  "items": [
+    {
+      "objectId": "customers_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "web_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_customers_data_all_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "customers_data_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_customers_web_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "customers_web_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "web_data_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_web_data_all_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "customers_binned",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_temp",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "target_feedback",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipe_from_notebook_bin_revenue",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

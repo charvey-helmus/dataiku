@@ -1,0 +1,18 @@
+{
+  "gitReferences": {
+    "coder_handson": {
+      "remote": "https://github.com/tylerfreckmann/coder_handson.git",
+      "checkout": "",
+      "remotePath": "",
+      "lastHash": "28af714bf2c3acc3ab6f3bc455a6534b726f9c2c"
+    }
+  },
+  "pythonPath": [
+    "python",
+    "coder_handson"
+  ],
+  "rsrcPath": [
+    "R"
+  ],
+  "importLibrariesFromProjects": []
+}

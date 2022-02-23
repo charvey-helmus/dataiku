@@ -1,0 +1,256 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "fullSampleStatistics": {
+      "engineConfig": {
+        "padRunsWithMetrics": false,
+        "hive": {
+          "active": true,
+          "extraConf": []
+        },
+        "basic": {},
+        "dss": {
+          "active": true,
+          "selection": {
+            "useMemTable": false,
+            "filter": {
+              "distinct": false,
+              "enabled": false
+            },
+            "partitionSelectionMethod": "ALL",
+            "latestPartitionsN": 1,
+            "ordering": {
+              "enabled": false,
+              "rules": []
+            },
+            "samplingMethod": "FULL",
+            "maxRecords": -1,
+            "targetRatio": 0.02,
+            "withinFirstN": -1,
+            "maxReadUncompressedBytes": -1
+          }
+        },
+        "sql": {
+          "active": true
+        },
+        "impala": {
+          "active": true
+        },
+        "spark": {
+          "active": true,
+          "extraConf": []
+        },
+        "python": {}
+      },
+      "basic": true,
+      "countDistinct": true,
+      "advanced": true,
+      "percentile": false,
+      "validity": false,
+      "updateOnAnalyzeBoxOpen": false,
+      "computeCostFreeMetrics": false,
+      "numberTopValues": 10
+    },
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "customer_id": 127,
+      "since_birth_days": 135,
+      "price_first_item_purchased": 210,
+      "gender": 100,
+      "revenue": 100,
+      "original_dataset": 135,
+      "ip": 120,
+      "ip_geopoint": 190,
+      "ip_country_code": 128,
+      "pages_visited": 113,
+      "campain": 100,
+      "is_id_ends_d": 105
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "scatter_map",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [
+          {
+            "column": "ip_geopoint",
+            "type": "GEOPOINT",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABXhJREFUeF7tmM9rHVUUx7/n5UeDTSlatdiFZpE3sSoiguBKW0UwJZmpCFIQlKL+ARVpZqqLrDrzREGX6sISdFModibSCmKri4KgC7FW25mAIWBBCsa2WkOb5Mid10meLz9ecl+TvHs9s5yZc+8538/93l8EeaxWgKyuToqDALZ8EAhgAWy5ApaXJw4WwJYrYHl54mABbLkClpcnDhbAlitgeXniYAFsuQKWlycOFsCWK2B5eeJgAWy5ApaXJw4WwJYrYHl54mABbLkClpcnDhbAlitgeXniYAFsuQKWlycOFsCWK2B5eeJgAWy5ApaXJw4WwJYrYHl5/zsHl/3kdBa5uy3nOlee1YDLQTKThW5bUW05iL8A05MEtDO4PYs86g2SV0qgM2k4eN5G6C0J+Fa7zPHjL9PIe6bsx7wQInEWuaVyEE+CcSaLvAGbQLck4DnH+cklAnelkbelGdEXBwsoB+ffGDMgtIHwJ5i2AvwBCPuIqRvgy2nk3Vnf//Y3Rjb//s5LfzeT13rEtizgsh8r8W5TIjDBKzEdY6ANzO9nFe+AcjkRd6eh95j6p+9Q/PCFw96Pi4lW9pPZvJUlHmKcRXupn2f4E7U+O0HyVxq63cvNJM5QPMYlbMtC7/b1AKXbR8sCVgVVnUecwyG6BuYceO1DoOkplO6eiAYmlxJhKQeDaIqY2xjoIKI/0tDdVjN75JuxesiOn4wweB+ADoC+BniXmgl0Aax1XMsmNg84l+AawF0AlWoFWamw9YCJcZEJO4q21CApNl2rHiSoTvVrDUq3/ZZNrCjICeJ3mfE6QNMAtxfvVyKq4ycnGNwP0PUscjfVi6TAE+g3gM8y8GzR5vyAoIkscu+rG2x5M/n6HRz/NAv3vqgr/nrEtQRgJSgzvh+rVNfT+scZGn2NafZD9Z4Ik2no3XFT9MtZ5G1dTqjF1tHe4MRdY+GeSwU4YnozrbiHnSD+Tq3p5aF4CoRNIPoJzA8R6AiDnwcwt9lbyQBbD4CN+mgJwI2SrP2eDwbg0RLjGybqJuAkE3Zlobt5gUPzow/9UFxs9B2Mt1x427u6YAD5yY00cjvq+ymcWuvguZ03aH8WuUdWk/tG/GscYCWSE3z+MvOMEncCzDeyyt5eZxFI+b9+fBygJwCcA/A4CFfT0M1ngCq4xW+2HD85l0bug9U2ko8Y/GoWqvNyMmuKe/MZbyNGVbN99g6NDhJxrC4oCkgE7mFgOxidXCq9NRYORrX99Ayf7hof3j3lDMWn0or3VBFXuwte7lhUHLUIPMIo3Vt73ekE8ak0rLbZao+RgIsps3CS4yfjaeT2KECNji1lP/k4i9z9eRtBPHkrzrFqM5dG7p5Wg2usg+vWym8BegTguV1yoynU8eOv0sh72vGTk2nk9tdM17PFrNAsrAeGj3b+PPzC9WbbaTbeWAerwvsOxju4RL+qiwp1GcJEB8ZC972ViHLziDRdv7lqFHu//1nP+ei58fr/VHuNBlajttfiu7GAdx46ds/0bPtFAv3C4J2rEbe4IdNxa/06XXuJMr9kjB5lnh3IKt6Cm7e1gLhcm8YCVpumzn+uXEkrXud6i7bQvf/dibeSm40FvNFQTelfAJtCSjNPAawpnClhAtgUUpp5CmBN4UwJE8CmkNLMUwBrCmdKmAA2hZRmngJYUzhTwgSwKaQ08xTAmsKZEiaATSGlmacA1hTOlDABbAopzTwFsKZwpoQJYFNIaeYpgDWFMyVMAJtCSjNPAawpnClhAtgUUpp5CmBN4UwJE8CmkNLMUwBrCmdKmAA2hZRmngJYUzhTwgSwKaQ08xTAmsKZEiaATSGlmacA1hTOlDABbAopzTwFsKZwpoQJYFNIaeb5L5C83mCYPMUfAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}

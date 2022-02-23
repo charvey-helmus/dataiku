@@ -1,0 +1,65 @@
+{
+  "name": "Code Modeling",
+  "color": "#C82423",
+  "items": [
+    {
+      "objectId": "recipe_from_notebook_custom_random_forest_classification",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "HT8V6csb",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_scored_rf",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scored_rf",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scored_rf_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scored_rf_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scored_rf_joined_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scored_rf_joined_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "standalone_evaluate_on_scored_rf_joined_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "E83tFP66",
+      "objectType": "MODEL_EVALUATION_STORE"
+    }
+  ],
+  "shared": [
+    {
+      "objectId": "train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "target_feedback",
+      "objectType": "DATASET"
+    }
+  ],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

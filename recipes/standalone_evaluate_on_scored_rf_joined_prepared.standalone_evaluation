@@ -1,0 +1,68 @@
+{
+  "isProbaAware": true,
+  "trainDataParams": {},
+  "predictionVariable": "prediction",
+  "metricParams": {
+    "customEvaluationMetricGIB": true,
+    "costMatrixWeights": {
+      "fpGain": -0.3,
+      "tpGain": 1,
+      "fnGain": 0,
+      "tnGain": 0
+    },
+    "liftPoint": 0.4,
+    "customEvaluationMetricNeedsProba": false,
+    "thresholdOptimizationMetric": "F1"
+  },
+  "classes": [],
+  "trainDataType": "EXTERNAL",
+  "modelType": "EXTERNAL",
+  "autoOptimizeThreshold": true,
+  "labels": [],
+  "features": [],
+  "targetVariable": "high_value",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "modelParams": {},
+  "selection": {
+    "useMemTable": false,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "latestPartitionsN": 1,
+    "maxRecords": -1,
+    "ordering": {
+      "rules": [],
+      "enabled": false
+    },
+    "withinFirstN": -1,
+    "partitionSelectionMethod": "ALL",
+    "targetRatio": 0.02,
+    "maxReadUncompressedBytes": -1,
+    "samplingMethod": "FULL"
+  },
+  "dontComputePerformance": false,
+  "activeClassifierThreshold": 0.5,
+  "probas": [
+    {
+      "value": "proba_False",
+      "key": "0"
+    },
+    {
+      "value": "proba_True",
+      "key": "1"
+    }
+  ],
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  }
+}

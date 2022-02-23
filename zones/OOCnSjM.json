@@ -1,0 +1,73 @@
+{
+  "name": "Visual Modeling",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "compute_to_assess",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "train_Random_Forest",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "to_assess",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "QLLFd3RP",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "compute_to_assess_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "score_test",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "to_assess_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_to_assess_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "evaluation_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "metrics",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "sngoA4ns",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "test_scored",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [
+    {
+      "objectId": "target_feedback",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "train",
+      "objectType": "DATASET"
+    }
+  ],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
