@@ -1,0 +1,30 @@
+version: 2
+
+models:
+    - name: gender
+      description: "A starter dbt model"
+      columns:
+          - name: gender
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: cnt
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null    
+                
+    - name: female
+      description: "A starter dbt model"
+      columns:
+          - name: gender
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: cnt
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null                  
