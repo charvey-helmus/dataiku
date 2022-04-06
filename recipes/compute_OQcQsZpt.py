@@ -22,10 +22,10 @@ df = dataiku.Dataset("train").get_dataframe()
 #-----------------------------------------------------------------
 
 # Select a subset of features to use for training
-SCHEMA = {    
-    'target': 'high_value',    
-    'features_num': ['age', 'price_first_item_purchased', 'pages_visited'],    
-    'features_cat': ['gender', 'campaign']    
+SCHEMA = {
+    'target': 'high_value',
+    'features_num': ['age', 'price_first_item_purchased', 'pages_visited'],
+    'features_cat': ['gender', 'campaign']
 }
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -103,12 +103,10 @@ clf = gs.best_estimator_
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-custom_random_forest = dataiku.Folder("HT8V6csb").get_path()
+custom_random_forest = dataiku.Folder("OQcQsZpt").get_path()
 
 for file in os.listdir(custom_random_forest):
     try: os.remove(file)
     except: pass
 
-from sklearn.externals import joblib
-fp = os.path.join(custom_random_forest, "clf.pkl")
-joblib.dump(clf, fp)
+mlflow.sklearn.save_model(clf, custom_random_forest+"/cat_boost_model_v1")
