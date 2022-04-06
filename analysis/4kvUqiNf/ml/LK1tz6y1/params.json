@@ -2304,7 +2304,7 @@
     "custom_python": [
       {
         "enabled": true,
-        "code": "from coder_handson.python_library.custom_random_forest import clf",
+        "code": "from python_library.custom_random_forest import clf",
         "name": "Custom Python model"
       }
     ],
