@@ -3,7 +3,28 @@
     {
       "id": "PhtwjJR",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "bc_confusion",
+              "advancedOptions": {}
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "OQUsA7f",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +34,11 @@
   "name": "Data Scientist Quick Start\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "msakande"
+      "login": "admin"
     },
-    "lastModifiedOn": 1617378472806
+    "lastModifiedOn": 1649268290703
   },
   "creationTag": {
     "versionNumber": 0,
