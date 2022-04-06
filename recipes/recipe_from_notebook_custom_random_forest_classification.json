@@ -40,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649280554648
+    "lastModifiedOn": 1649280689025
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,6 +53,7 @@
     },
     "lastModifiedOn": 1645030649074
   },
+  "shortDesc": "Random forest model creation",
   "tags": [],
   "customFields": {},
   "checklists": {
