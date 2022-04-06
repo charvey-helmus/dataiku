@@ -60,7 +60,7 @@
       "python": {
         "mode": "EXPLICIT_ENV",
         "preventOverride": false,
-        "envName": "py36_visual_ml"
+        "envName": "py_3_7"
       },
       "r": {
         "mode": "INHERIT",
@@ -125,7 +125,8 @@
         },
         "deploymentModifier": {}
       }
-    }
+    },
+    "dkuProperties": []
   },
   "name": "Coder Handson",
   "imgPattern": 1,
@@ -185,11 +186,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576532670
+    "lastModifiedOn": 1649259992536
   },
   "creationTag": {
     "versionNumber": 0,
