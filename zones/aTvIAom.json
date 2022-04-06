@@ -41,6 +41,10 @@
     {
       "objectId": "E83tFP66",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "OQcQsZpt",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [
