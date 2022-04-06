@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576903420
+    "lastModifiedOn": 1649268506157
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,64 +59,22 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "customer_id",
-        "type": "string"
-      },
-      {
-        "name": "age",
-        "type": "bigint"
-      },
-      {
-        "name": "price_first_item_purchased",
-        "type": "double"
-      },
-      {
-        "name": "gender",
-        "type": "string"
-      },
-      {
-        "name": "data_source",
-        "type": "string"
-      },
-      {
-        "name": "ip",
-        "type": "string"
-      },
-      {
-        "name": "ip_geopoint",
-        "type": "string"
-      },
-      {
-        "name": "ip_country_code",
-        "type": "string"
-      },
-      {
-        "name": "pages_visited",
-        "type": "double"
-      },
-      {
-        "name": "campaign",
-        "type": "boolean"
-      },
-      {
-        "name": "high_value",
-        "type": "double"
-      },
-      {
-        "name": "prediction",
-        "type": "double"
-      },
-      {
-        "name": "proba_False",
-        "type": "double"
-      },
-      {
-        "name": "proba_True",
-        "type": "double"
-      }
+      {"name":"customer_id","type":"string"},
+      {"name":"age","type":"bigint"},
+      {"name":"price_first_item_purchased","type":"double"},
+      {"name":"gender","type":"string"},
+      {"name":"data_source","type":"string"},
+      {"name":"ip","type":"string"},
+      {"name":"ip_geopoint","type":"string"},
+      {"name":"ip_country_code","type":"string"},
+      {"name":"pages_visited","type":"double"},
+      {"name":"campaign","type":"boolean"},
+      {"name":"high_value","type":"double"},
+      {"name":"prediction","type":"double"},
+      {"name":"proba_False","type":"double"},
+      {"name":"proba_True","type":"double"}
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
@@ -140,6 +98,55 @@
           "level": 0
         },
         "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
       }
     ],
     "engineConfig": {
@@ -183,6 +190,7 @@
       "python": {}
     },
     "displayedState": {
+      "partition": "NP",
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
@@ -192,8 +200,27 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "records:COUNT_RECORDS",
+        "minimum": 1.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "ROWS NOT EMPTY"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
+      "partition": "NP",
       "checks": []
     }
   },
