@@ -11,6 +11,7 @@
     {
       "smartId": "ME-*-sngoA4ns-sajba83TgfWl",
       "isSelected": true,
+      "color": "#ff7f0e",
       "isChampion": false
     }
   ],
@@ -46,11 +47,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "tfreckmann"
+      "login": "admin"
     },
-    "lastModifiedOn": 1645573114024
+    "lastModifiedOn": 1649281025475
   },
   "creationTag": {
     "versionNumber": 0,
