@@ -47,14 +47,31 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION",
-        "model_perf:PRECISION"
+        "reporting:BUILD_DURATION"
       ]
     }
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "model_perf:PRECISION",
+        "minimum": 0.6,
+        "maximum": 0.0,
+        "softMinimum": 0.8,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": true,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "PRECISION"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []
@@ -101,11 +118,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649268539373
+    "lastModifiedOn": 1649268570260
   },
   "creationTag": {
     "versionNumber": 0,
