@@ -9,17 +9,102 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 8,
-              "height": 4
+              "width": 6,
+              "height": 10
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "displayMode": "bc_confusion",
-              "advancedOptions": {}
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "customer_id",
+                    "ip",
+                    "age",
+                    "price_first_item_purchased",
+                    "gender",
+                    "data_source",
+                    "ip_geopoint",
+                    "ip_country_code",
+                    "pages_visited",
+                    "campaign"
+                  ]
+                }
+              }
             },
             "autoLoad": true,
             "showTitle": "YES",
             "insightId": "OQUsA7f",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 6,
+              "width": 6,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "bc_decision_chart",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "customer_id",
+                    "ip",
+                    "age",
+                    "price_first_item_purchased",
+                    "gender",
+                    "data_source",
+                    "ip_geopoint",
+                    "ip_country_code",
+                    "pages_visited",
+                    "campaign"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "bdU24IK",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 6,
+              "width": 6,
+              "height": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "c_roc",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "customer_id",
+                    "ip",
+                    "age",
+                    "price_first_item_purchased",
+                    "gender",
+                    "data_source",
+                    "ip_geopoint",
+                    "ip_country_code",
+                    "pages_visited",
+                    "campaign"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "kWnCntd",
             "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
@@ -34,11 +119,11 @@
   "name": "Data Scientist Quick Start\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649268291433
+    "lastModifiedOn": 1649268400092
   },
   "creationTag": {
     "versionNumber": 0,
