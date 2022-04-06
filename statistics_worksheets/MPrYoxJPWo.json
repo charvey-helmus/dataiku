@@ -1,0 +1,102 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "customers_binned",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "fit_distribution",
+        "distributions": [
+          {
+            "distribution": {
+              "type": "normal"
+            }
+          }
+        ],
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "age",
+          "type": "CONTINUOUS"
+        },
+        "id": "FOqS6Pi"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "high_value",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "price_first_item_purchased",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "pages_visited",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "SbTSQoJ"
+      }
+    ],
+    "id": "Jl8tEqs"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649280801828
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649280763801
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
