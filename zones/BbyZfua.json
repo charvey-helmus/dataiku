@@ -17,6 +17,10 @@
     {
       "objectId": "compute_eweMy2lv",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "EYknJAXd",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],
