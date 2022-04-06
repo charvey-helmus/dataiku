@@ -75,7 +75,9 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "PRECISION"
+      ]
     }
   },
   "flowOptions": {
@@ -119,11 +121,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649268584154
+    "lastModifiedOn": 1649268587795
   },
   "creationTag": {
     "versionNumber": 0,
