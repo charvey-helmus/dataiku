@@ -103,34 +103,12 @@ clf = gs.best_estimator_
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-custom_random_forest = dataiku.Folder("OQcQsZpt").get_path()
+custom_random_forest = dataiku.Folder("HT8V6csb").get_path()
 
 for file in os.listdir(custom_random_forest):
     try: os.remove(file)
     except: pass
 
-mlflow.sklearn.save_model(clf, custom_random_forest)
-
-client = dataiku.api_client()
-project = client.get_project(dataiku.default_project_key())
-
-saved_model = project.create_mlflow_pyfunc_model('random_forest', 'BINARY')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#load the MLFlow Model into DSS
-mlflow_version = saved_model.import_mlflow_version_from_path("v1", file_name, 'solution_market-basket-analysis_1')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-mlflow_version.set_core_metadata("Pure_Premium", get_features_from_dataset="Test")
-
-mlflow_version.evaluate('Train')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-clf=mlflow.pyfunc.load_model(file_name)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-clf = clf.predict(df.drop('Pure_Premium', 1))
-Train_Scores_df = pd.DataFrame (clf, columns = ['Pure_Premium_Pred'])
-print(Train_Scores_df)
-Train_Scores = dataiku.Dataset("Train_Scores")
-Train_Scores.write_with_schema(Train_Scores_df)
+from sklearn.externals import joblib
+fp = os.path.join(custom_random_forest, "clf.pkl")
+joblib.dump(clf, fp)
