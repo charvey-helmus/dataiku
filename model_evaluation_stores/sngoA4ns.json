@@ -80,7 +80,6 @@
       "ROC_AUC",
       "CALIBRATION_LOSS",
       "CUMULATIVE_LIFT",
-      "CUSTOM",
       "DATA_DRIFT"
     ],
     "predictionType": "BINARY_CLASSIFICATION",
@@ -102,12 +101,13 @@
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
+  "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576850981
+    "lastModifiedOn": 1649280946100
   },
   "creationTag": {
     "versionNumber": 0,
