@@ -1,7 +1,16 @@
 {
   "name": "MLFlow + Visual",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_OQcQsZpt",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "OQcQsZpt",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
