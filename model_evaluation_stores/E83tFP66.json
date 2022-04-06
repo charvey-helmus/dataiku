@@ -84,7 +84,9 @@
     "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [],
     "xLabel": "evaluation:date",
-    "yLabels": [],
+    "yLabels": [
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
@@ -96,12 +98,13 @@
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
+  "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645577085344
+    "lastModifiedOn": 1649268523445
   },
   "creationTag": {
     "versionNumber": 0,
