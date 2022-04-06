@@ -1,7 +1,7 @@
 {
   "gitReferences": {},
   "pythonPath": [
-    "python"
+    "python", "python_library"
   ],
   "rsrcPath": [
     "R"
