@@ -24,7 +24,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "sparkParams": {
     "pipelineAllowMerge": true,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
