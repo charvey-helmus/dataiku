@@ -13,6 +13,10 @@
     {
       "objectId": "eweMy2lv",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_eweMy2lv",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
