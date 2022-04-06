@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649268506157
+    "lastModifiedOn": 1649268509994
   },
   "creationTag": {
     "versionNumber": 0,
@@ -221,7 +221,9 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "ROWS NOT EMPTY"
+      ]
     }
   },
   "customFields": {}
