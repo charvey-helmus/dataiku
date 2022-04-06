@@ -70,20 +70,39 @@
     "dimensions": []
   },
   "displayParams": {
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT",
+      "CUSTOM",
+      "DATA_DRIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [],
-    "yLabels": [],
+    "xLabel": "evaluation:date",
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649268609051
+    "lastModifiedOn": 1649268633895
   },
   "creationTag": {
     "versionNumber": 0,
