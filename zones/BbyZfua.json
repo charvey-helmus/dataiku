@@ -1,28 +1,7 @@
 {
   "name": "MLFlow + Visual",
   "color": "#D03713",
-  "items": [
-    {
-      "objectId": "compute_OQcQsZpt",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "OQcQsZpt",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "eweMy2lv",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_eweMy2lv",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "EYknJAXd",
-      "objectType": "SAVED_MODEL"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
