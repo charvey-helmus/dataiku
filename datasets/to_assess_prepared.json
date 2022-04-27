@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645576404615
+    "lastModifiedOn": 1651070794268
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,57 +90,17 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "customer_id",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "ip",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "age",
-        "type": "bigint"
-      },
-      {
-        "name": "price_first_item_purchased",
-        "type": "double"
-      },
-      {
-        "name": "gender",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "data_source",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "ip_geopoint",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "ip_country_code",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "pages_visited",
-        "type": "double"
-      },
-      {
-        "name": "campaign",
-        "type": "boolean"
-      },
-      {
-        "name": "high_value",
-        "type": "double",
-        "meaning": "DoubleMeaning"
-      }
+      {"name":"customer_id","type":"string","maxLength":16200},
+      {"name":"ip","type":"string","maxLength":16200},
+      {"name":"age","type":"bigint"},
+      {"name":"price_first_item_purchased","type":"double"},
+      {"name":"gender","type":"string","maxLength":16200},
+      {"name":"data_source","type":"string","maxLength":16200},
+      {"name":"ip_geopoint","type":"string","maxLength":16200},
+      {"name":"ip_country_code","type":"string","maxLength":16200},
+      {"name":"pages_visited","type":"double"},
+      {"name":"campaign","type":"boolean"},
+      {"name":"high_value","type":"double","meaning":"DoubleMeaning"}
     ],
     "userModified": true
   },
@@ -166,6 +126,55 @@
           "level": 0
         },
         "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
       }
     ],
     "engineConfig": {
@@ -209,6 +218,7 @@
       "python": {}
     },
     "displayedState": {
+      "partition": "NP",
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
@@ -220,8 +230,44 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "records:COUNT_RECORDS",
+        "minimum": 1.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "ROWS PRESENT"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "metricId": "basic:COUNT_COLUMNS",
+        "minimum": 11.0,
+        "maximum": 11.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "CORRECT COLUMNS"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
+      "partition": "NP",
       "checks": []
     }
   },
