@@ -47,15 +47,31 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION",
-        "model_perf:DATA_DRIFT",
-        "model_perf:PRECISION"
+        "reporting:BUILD_DURATION"
       ]
     }
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "model_perf:DATA_DRIFT",
+        "minimum": 0.0,
+        "maximum": 0.6,
+        "softMinimum": 0.0,
+        "softMaximum": 0.5,
+        "minimumEnabled": false,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": true,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "Data Drift"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []
@@ -105,11 +121,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651070843833
+    "lastModifiedOn": 1651070870114
   },
   "creationTag": {
     "versionNumber": 0,
