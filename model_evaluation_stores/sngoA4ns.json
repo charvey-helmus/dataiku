@@ -47,7 +47,8 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION"
+        "reporting:BUILD_DURATION",
+        "model_perf:DATA_DRIFT"
       ]
     }
   },
@@ -121,11 +122,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651070870229
+    "lastModifiedOn": 1651074587331
   },
   "creationTag": {
     "versionNumber": 0,
