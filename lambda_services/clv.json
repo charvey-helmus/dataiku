@@ -1,4 +1,5 @@
 {
+  "name": "clv",
   "endpoints": [
     {
       "modelRef": "QLLFd3RP",
@@ -12,7 +13,25 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "RAW",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "test #1",
+          "q": {
+            "features": {
+              "customer_id": "0008dd99a0a",
+              "age": 71,
+              "price_first_item_purchased": 22,
+              "gender": "F",
+              "data_source": "testing",
+              "ip": "88.69.206.61",
+              "ip_geopoint": "POINT(9.4862 51.3581)",
+              "ip_country_code": "DE",
+              "pages_visited": 3,
+              "campaign": false
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -26,11 +45,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651070558944
+    "lastModifiedOn": 1651070571415
   },
   "creationTag": {
     "versionNumber": 0,
