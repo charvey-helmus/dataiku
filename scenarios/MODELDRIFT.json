@@ -5,18 +5,18 @@
   "name": "Model Drift",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651070620032
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651070774320
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651070829046
   },
   "checklists": {
     "checklists": []
@@ -127,6 +127,31 @@
           ],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "check_false_e_sngoA4ns",
+        "type": "check_dataset",
+        "name": "on eval store (drift)",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "MODEL_EVALUATION_STORE",
+              "itemId": "sngoA4ns",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": false,
           "proceedOnFailure": false
         }
       }
