@@ -1,0 +1,323 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "customers_data",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "revenue",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "price_first_item_purchased",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "gender",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "price_first_item_purchased",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "EpNdMj3"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "amSKx3a"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4VHU8sn"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YdWuets"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tPOboII"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "price_first_item_purchased",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "D62ChF4"
+              }
+            ],
+            "id": "y8RnBIt"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "gender",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "gender",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ZIfBgpX"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "gender",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "lXywvPt"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "gender",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "UFWnLBa"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "gender",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4N0VXTy"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "gender",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "revenue",
+                  "type": "CONTINUOUS"
+                },
+                "id": "z9gWSbh"
+              }
+            ],
+            "id": "SPK6u1j"
+          }
+        ],
+        "id": "RnVxgbD"
+      }
+    ],
+    "id": "veKwvCu"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651069378162
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651069336958
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
