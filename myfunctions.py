@@ -1,5 +1,3 @@
-import dataiku
-
 def create_target(row):
     revenue = row['revenue']
     v = int(dataiku.get_custom_variables()["revenue_value"])
