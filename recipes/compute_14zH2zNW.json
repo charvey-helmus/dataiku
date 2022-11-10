@@ -20,7 +20,12 @@
   "dkuProperties": [],
   "inputs": {
     "main": {
-      "items": []
+      "items": [
+        {
+          "ref": "flight_ground_truth",
+          "deps": []
+        }
+      ]
     }
   },
   "outputs": {
@@ -35,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668113041474
+    "lastModifiedOn": 1668113050699
   },
   "creationTag": {
     "versionNumber": 0,
