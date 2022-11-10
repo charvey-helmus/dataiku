@@ -27,8 +27,36 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UpDownFiller",
+      "params": {
+        "columns": [
+          "dep_month",
+          "dep_woy",
+          "dep_dow",
+          "dep_hour",
+          "UniqueCarrier",
+          "FlightNum",
+          "AirTime",
+          "Late",
+          "Origin",
+          "Dest",
+          "Distance",
+          "Late_avg"
+        ],
+        "up": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +82,21 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "FlightNum": 100,
+    "Origin": 100,
+    "": 100,
+    "dep_hour": 100,
+    "Late": 100,
+    "Dest": 100,
+    "dep_dow": 100,
+    "AirTime": 100,
+    "UniqueCarrier": 113,
+    "dep_month": 100,
+    "dep_woy": 100,
+    "Late_avg": 155,
+    "Distance": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
