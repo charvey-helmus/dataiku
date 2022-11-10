@@ -57,7 +57,7 @@ import mlflow
 
 
 project = dataiku.api_client().get_default_project()
-managed_folder = project.get_managed_folder('OxV2BUAY')
+managed_folder = project.get_managed_folder('3hOB5aod')
 
 with project.setup_mlflow(managed_folder=managed_folder) as mlflow:
     mlflow.set_experiment("Let's autolog")
