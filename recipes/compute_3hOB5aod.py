@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import roc_auc_score
 # Read recipe inputs
-flight_joined_prepared = dataiku.Dataset("flight_joined_prepared")
+flight_joined_prepared = dataiku.Dataset("flight_data")
 df = flight_joined_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
