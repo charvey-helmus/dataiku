@@ -67,8 +67,8 @@ clf = Pipeline(
 param_grid = {
     "clf__max_depth"        : [3, None],
     "clf__max_features"     : [1, 3],
-    "clf__min_samples_split": [2, 3],
-    "clf__min_samples_leaf" : [1, 3],
+    "clf__min_samples_split": [2],
+    "clf__min_samples_leaf" : [1],
     "clf__bootstrap"        : [True, False],
     "clf__criterion"        : ["gini", "entropy"],
     "clf__n_estimators"     : [10]
