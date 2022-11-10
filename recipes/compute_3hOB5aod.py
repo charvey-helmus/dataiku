@@ -86,7 +86,7 @@ with project.setup_mlflow(managed_folder=managed_folder) as mlflow:
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 client = dataiku.api_client()
-project = client.get_project('HELMUS_SANDBOX')
+project = client.get_project('MLFLOWO16N')
 # Get or create saved models
 if dataiku.get_custom_variables()["saved_model_id"] == "":
     saved_model = project.create_mlflow_pyfunc_model("mlflow_model", "BINARY_CLASSIFICATION")
@@ -96,7 +96,7 @@ else:
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 
-mlflow_version = saved_model.import_mlflow_version_from_managed_folder(dataiku.get_custom_variables()["custom_model_version"], "OxV2BUAY", 'let_s_autolog/my_run_Qfu/artifacts/model/',code_env_name="mlflow")
+mlflow_version = saved_model.import_mlflow_version_from_managed_folder(dataiku.get_custom_variables()["custom_model_version"], "3hOB5aod", 'let_s_autolog/my_run_Qfu/artifacts/model/',code_env_name="mlflow")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 mlflow_version.set_core_metadata(SCHEMA['target'], class_labels=["false", "true"], get_features_from_dataset="flight_ground_truth")
