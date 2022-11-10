@@ -4,10 +4,12 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "mlflow"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "CPU-XL-2-cpu-16Gb-Ram"
     },
     "skipPrerunValidate": false
   },
@@ -40,11 +42,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668099222997
+    "lastModifiedOn": 1668099239504
   },
   "creationTag": {
     "versionNumber": 0,
