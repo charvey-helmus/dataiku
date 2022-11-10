@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668121100814
+    "lastModifiedOn": 1668121118141
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,8 +67,24 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"dep_month","type":"bigint"},
+      {"name":"dep_woy","type":"bigint"},
+      {"name":"dep_dow","type":"bigint"},
+      {"name":"dep_hour","type":"bigint"},
+      {"name":"UniqueCarrier","type":"string"},
+      {"name":"FlightNum","type":"bigint"},
+      {"name":"AirTime","type":"bigint"},
+      {"name":"Late","type":"boolean"},
+      {"name":"Origin","type":"string"},
+      {"name":"Dest","type":"string"},
+      {"name":"Distance","type":"bigint"},
+      {"name":"Late_avg","type":"double"},
+      {"name":"prediction","type":"string"},
+      {"name":"proba_false","type":"double"},
+      {"name":"proba_true","type":"double"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
