@@ -105,7 +105,7 @@ clf = gs.best_estimator_
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-mlflow_models = dataiku.Folder("ysKnwWW9").get_path()
+mlflow_models = dataiku.Folder("3hOB5aod").get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 import mlflow
