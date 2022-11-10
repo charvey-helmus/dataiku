@@ -11,7 +11,24 @@
   "hasSetupSection": false,
   "owner": "chris.helmus@dataiku.com",
   "permissionsVersion": "V2",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "space_administrators",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -185,6 +202,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "api:BP4KDIRZ4MT68Y3C"
+    },
+    "lastModifiedOn": 1668099351471
   },
   "creationTag": {
     "versionNumber": 0,
