@@ -1,7 +1,16 @@
 {
   "name": "test",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_14zH2zNW",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "14zH2zNW",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
