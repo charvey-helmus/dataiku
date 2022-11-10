@@ -17,7 +17,7 @@
   "outputProbaPercentiles": false,
   "outputProbabilities": true,
   "forceOriginalEngine": false,
-  "treatmentRatio": 0.0,
+  "treatmentRatio": 0,
   "individualExplanationParams": {
     "drawInScoredSet": false,
     "subChunkSize": 5000,
@@ -25,7 +25,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "outputExplanations": false,
   "overrideModelSpecifiedThreshold": false,
