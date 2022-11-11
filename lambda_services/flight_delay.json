@@ -1,4 +1,5 @@
 {
+  "name": "flight_delay",
   "endpoints": [
     {
       "modelRef": "OrZu5GiL",
@@ -12,7 +13,27 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "RAW",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "flight_data #1",
+          "q": {
+            "features": {
+              "dep_month": 12,
+              "dep_woy": 1,
+              "dep_dow": 3,
+              "dep_hour": 12,
+              "UniqueCarrier": "AS",
+              "FlightNum": 38,
+              "AirTime": 156,
+              "Late": false,
+              "Origin": "SEA",
+              "Dest": "MSP",
+              "Distance": 1399,
+              "Late_avg": 0.16666666666666666
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -31,11 +52,11 @@
     "scopeClaimKey": "scope"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668190234618
+    "lastModifiedOn": 1668190256907
   },
   "creationTag": {
     "versionNumber": 0,
