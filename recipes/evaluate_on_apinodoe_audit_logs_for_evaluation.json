@@ -40,15 +40,23 @@
           "appendMode": false
         }
       ]
+    },
+    "metrics": {
+      "items": [
+        {
+          "ref": "flight_mes_metrics",
+          "appendMode": false
+        }
+      ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192657276
+    "lastModifiedOn": 1668192675585
   },
   "creationTag": {
     "versionNumber": 0,
