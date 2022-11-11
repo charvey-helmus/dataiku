@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192514100
+    "lastModifiedOn": 1668192604540
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,8 +67,64 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"severity","type":"string"},
+      {"name":"logger","type":"string"},
+      {"name":"topic","type":"string"},
+      {"name":"message.msgType","type":"string"},
+      {"name":"message.savedModel.projectKey","type":"string"},
+      {"name":"message.savedModel.savedModelId","type":"string"},
+      {"name":"message.savedModel.modelVersion","type":"bigint"},
+      {"name":"message.savedModel.fullModelId","type":"string"},
+      {"name":"message.serviceGenerationId","type":"string"},
+      {"name":"message.endpointId","type":"string"},
+      {"name":"message.batchIdx","type":"bigint"},
+      {"name":"message.timing.postProcessing","type":"bigint"},
+      {"name":"message.timing.wait","type":"bigint"},
+      {"name":"message.timing.preProcessing","type":"bigint"},
+      {"name":"message.timing.prediction","type":"bigint"},
+      {"name":"message.timing.enrich","type":"bigint"},
+      {"name":"message.timing.preparation","type":"bigint"},
+      {"name":"message.apiDeployerDeployment.deploymentId","type":"string"},
+      {"name":"message.apiDeployerDeployment.publishedServiceId","type":"string"},
+      {"name":"message.apiDeployerDeployment.infraId","type":"string"},
+      {"name":"message.originalIP","type":"string"},
+      {"name":"message.result.ignored","type":"boolean"},
+      {"name":"message.result.prediction","type":"boolean"},
+      {"name":"message.callPath","type":"string"},
+      {"name":"message.auditTopic","type":"string"},
+      {"name":"message.auditRoutingKey","type":"string"},
+      {"name":"message.service","type":"string"},
+      {"name":"message.clientIP","type":"string"},
+      {"name":"message.apiContext.endpointId","type":"string"},
+      {"name":"message.apiContext.serviceId","type":"string"},
+      {"name":"message.apiContext.serviceGeneration","type":"string"},
+      {"name":"message.apinodeQueryType","type":"string"},
+      {"name":"message.xForwardedFor","type":"string"},
+      {"name":"message.serviceId","type":"string"},
+      {"name":"message.batchSize","type":"bigint"},
+      {"name":"message.securityAccess","type":"string"},
+      {"name":"mdc.endpointId","type":"string"},
+      {"name":"mdc.apiCall","type":"string"},
+      {"name":"mdc.serviceId","type":"string"},
+      {"name":"callTime","type":"bigint"},
+      {"name":"timestamp","type":"date"},
+      {"name":"apiNode","type":"string"},
+      {"name":"message.timing.predictionPredict","type":"bigint"},
+      {"name":"Origin","type":"string"},
+      {"name":"FlightNum","type":"bigint"},
+      {"name":"dep_hour","type":"bigint"},
+      {"name":"Dest","type":"string"},
+      {"name":"Late","type":"boolean"},
+      {"name":"dep_dow","type":"bigint"},
+      {"name":"AirTime","type":"bigint"},
+      {"name":"UniqueCarrier","type":"string"},
+      {"name":"Late_avg","type":"double"},
+      {"name":"dep_month","type":"bigint"},
+      {"name":"dep_woy","type":"bigint"},
+      {"name":"Distance","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
