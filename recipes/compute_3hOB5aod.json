@@ -8,7 +8,7 @@
       "envName": "mlflow"
     },
     "containerSelection": {
-      "containerMode": "EXPLICIT_CONTAINER",
+      "containerMode": "NONE",
       "containerConf": "CPU-4-RAM32Gb"
     },
     "skipPrerunValidate": false
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668127299353
+    "lastModifiedOn": 1668178370732
   },
   "creationTag": {
     "versionNumber": 0,
