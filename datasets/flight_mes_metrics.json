@@ -2,6 +2,7 @@
   "type": "S3",
   "managed": true,
   "featureGroup": false,
+  "shortDesc": "need to filter to only columns needed by model",
   "formatType": "parquet",
   "checklists": {
     "checklists": []
@@ -37,11 +38,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192673379
+    "lastModifiedOn": 1668193000101
   },
   "creationTag": {
     "versionNumber": 0,
