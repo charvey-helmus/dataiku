@@ -9,7 +9,7 @@
     },
     "containerSelection": {
       "containerMode": "EXPLICIT_CONTAINER",
-      "containerConf": "CPU-XL-2-cpu-16Gb-Ram"
+      "containerConf": "CPU-4-RAM32Gb"
     },
     "skipPrerunValidate": false
   },
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668126152773
+    "lastModifiedOn": 1668126257951
   },
   "creationTag": {
     "versionNumber": 0,
