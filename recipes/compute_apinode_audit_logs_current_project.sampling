@@ -8,7 +8,7 @@
         "input": "message.savedModel.projectKey",
         "col": "logger",
         "$appliesTo": "value",
-        "string": "MLFLOW016N",
+        "string": "MLFLOWO16N",
         "num": 0,
         "$label": "Contains",
         "operator": "contains"
