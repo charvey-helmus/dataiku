@@ -1,0 +1,204 @@
+{
+  "type": "S3",
+  "managed": false,
+  "featureGroup": false,
+  "formatType": "json",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "maxExpansionDepth": -1,
+    "nestedArraysHandling": "PRESERVE",
+    "extractFromSingleElement": false,
+    "nestedArraysMaxElements": 100,
+    "nestedArraysMaxContentSize": 300000,
+    "headerRow": false
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chris.helmus@dataiku.com"
+    },
+    "lastModifiedOn": 1668190544379
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chris.helmus@dataiku.com"
+    },
+    "lastModifiedOn": 1668190544379
+  },
+  "tags": [],
+  "params": {
+    "metastoreSynchronizationEnabled": true,
+    "connection": "customer-audit-log",
+    "path": "/apinode-audit-logs",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"severity","type":"string"},
+      {"name":"logger","type":"string"},
+      {"name":"topic","type":"string"},
+      {"name":"message.msgType","type":"string"},
+      {"name":"message.savedModel.projectKey","type":"string"},
+      {"name":"message.savedModel.savedModelId","type":"string"},
+      {"name":"message.savedModel.modelVersion","type":"string"},
+      {"name":"message.savedModel.fullModelId","type":"string"},
+      {"name":"message.serviceGenerationId","type":"string"},
+      {"name":"message.endpointId","type":"string"},
+      {"name":"message.batchIdx","type":"string"},
+      {"name":"message.timing.postProcessing","type":"string"},
+      {"name":"message.timing.wait","type":"string"},
+      {"name":"message.timing.preProcessing","type":"string"},
+      {"name":"message.timing.prediction","type":"string"},
+      {"name":"message.timing.enrich","type":"string"},
+      {"name":"message.timing.preparation","type":"string"},
+      {"name":"message.apiDeployerDeployment.deploymentId","type":"string"},
+      {"name":"message.apiDeployerDeployment.publishedServiceId","type":"string"},
+      {"name":"message.apiDeployerDeployment.infraId","type":"string"},
+      {"name":"message.originalIP","type":"string"},
+      {"name":"message.result.ignored","type":"string"},
+      {"name":"message.result.prediction","type":"string"},
+      {"name":"message.callPath","type":"string"},
+      {"name":"message.auditTopic","type":"string"},
+      {"name":"message.features.join_pages_visited","type":"string"},
+      {"name":"message.features.join_campain","type":"string"},
+      {"name":"message.features.gender","type":"string"},
+      {"name":"message.features.join_ip","type":"string"},
+      {"name":"message.features.price_first_item_purchased","type":"string"},
+      {"name":"message.features.customer_id","type":"string"},
+      {"name":"message.features.age","type":"string"},
+      {"name":"message.features.join_ip_country","type":"string"},
+      {"name":"message.auditRoutingKey","type":"string"},
+      {"name":"message.service","type":"string"},
+      {"name":"message.clientIP","type":"string"},
+      {"name":"message.apiContext.endpointId","type":"string"},
+      {"name":"message.apiContext.serviceId","type":"string"},
+      {"name":"message.apiContext.serviceGeneration","type":"string"},
+      {"name":"message.apinodeQueryType","type":"string"},
+      {"name":"message.xForwardedFor","type":"string"},
+      {"name":"message.serviceId","type":"string"},
+      {"name":"message.batchSize","type":"string"},
+      {"name":"message.securityAccess","type":"string"},
+      {"name":"mdc.endpointId","type":"string"},
+      {"name":"mdc.apiCall","type":"string"},
+      {"name":"mdc.serviceId","type":"string"},
+      {"name":"callTime","type":"string"},
+      {"name":"timestamp","type":"string"},
+      {"name":"apiNode","type":"string"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
