@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192303048
+    "lastModifiedOn": 1668192485726
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,7 +120,20 @@
       {"name":"apiNode","type":"string"},
       {"name":"message.timing.predictionPredict","type":"bigint"},
       {"name":"feature_name","type":"string"},
-      {"name":"feature_value","type":"string"}
+      {"name":"feature_name_0","type":"string"},
+      {"name":"feature_value","type":"string"},
+      {"name":"Origin","type":"string"},
+      {"name":"FlightNum","type":"bigint"},
+      {"name":"dep_hour","type":"bigint"},
+      {"name":"Dest","type":"string"},
+      {"name":"Late","type":"string"},
+      {"name":"dep_dow","type":"bigint"},
+      {"name":"AirTime","type":"bigint"},
+      {"name":"UniqueCarrier","type":"string"},
+      {"name":"Late_avg","type":"double"},
+      {"name":"dep_month","type":"bigint"},
+      {"name":"dep_woy","type":"bigint"},
+      {"name":"Distance","type":"bigint"}
     ],
     "userModified": true
   },
