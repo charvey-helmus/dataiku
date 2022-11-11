@@ -21,6 +21,18 @@
     {
       "objectId": "apinode_audit_logs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_apinodoe_audit_logs_for_evaluation",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "flight_mes_metrics",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "9uEOh7v5",
+      "objectType": "MODEL_EVALUATION_STORE"
     }
   ],
   "shared": [],
