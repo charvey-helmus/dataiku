@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192487499
+    "lastModifiedOn": 1668192728688
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,7 @@
     },
     "lastModifiedOn": 1668191459804
   },
+  "shortDesc": "prepare and parse out proper column names for currnet project",
   "tags": [],
   "customFields": {},
   "checklists": {
