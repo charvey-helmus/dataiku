@@ -33,6 +33,10 @@
     {
       "objectId": "9uEOh7v5",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "training_schema",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
