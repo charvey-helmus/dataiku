@@ -1,0 +1,88 @@
+{
+  "outputs": [
+    "prediction_correct"
+  ],
+  "perGPUMemoryFraction": 0.5,
+  "sqlPipelineParams": {
+    "pipelineAllowMerge": true,
+    "pipelineAllowStart": true
+  },
+  "modelVersionId": "",
+  "backendType": "PY_MEMORY",
+  "filterInputColumns": false,
+  "useGPU": false,
+  "keptInputColumns": [],
+  "gpuAllowGrowth": false,
+  "pastTimestepsToInclude": -1,
+  "dontComputePerformance": false,
+  "outputProbaPercentiles": false,
+  "outputProbabilities": true,
+  "forceOriginalEngine": false,
+  "treatmentRatio": 0.0,
+  "individualExplanationParams": {
+    "drawInScoredSet": false,
+    "subChunkSize": 5000,
+    "method": "ICE",
+    "shapleyBackgroundSize": 100,
+    "nbExplanations": 3
+  },
+  "forcedClassifierThreshold": 0.0,
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  },
+  "computePerTimeseriesMetrics": false,
+  "mlFlowOutputStyle": "PARSED",
+  "labels": [],
+  "pythonBatchSize": 100000,
+  "assignTreatment": false,
+  "selection": {
+    "useMemTable": false,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "latestPartitionsN": 1,
+    "maxRecords": -1,
+    "ordering": {
+      "rules": [],
+      "enabled": false
+    },
+    "withinFirstN": -1,
+    "partitionSelectionMethod": "ALL",
+    "targetRatio": 0.02,
+    "maxReadUncompressedBytes": -1,
+    "samplingMethod": "FULL"
+  },
+  "computeAssertions": false,
+  "refitModel": false,
+  "maxNbForecastHorizons": 0,
+  "metrics": [
+    "precision",
+    "recall",
+    "auc",
+    "f1",
+    "accuracy",
+    "mcc",
+    "hammingLoss",
+    "logLoss",
+    "lift",
+    "calibrationLoss",
+    "customScore",
+    "costMatrixGain"
+  ],
+  "batchSize": 100,
+  "outputExplanations": false,
+  "overrideModelSpecifiedThreshold": false,
+  "gpuList": [
+    0
+  ]
+}
