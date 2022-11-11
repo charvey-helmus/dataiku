@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668191459799
+    "lastModifiedOn": 1668192303048
   },
   "creationTag": {
     "versionNumber": 0,
@@ -119,18 +119,8 @@
       {"name":"timestamp","type":"date"},
       {"name":"apiNode","type":"string"},
       {"name":"message.timing.predictionPredict","type":"bigint"},
-      {"name":"message.features.FlightNum","type":"bigint"},
-      {"name":"message.features.Origin","type":"string"},
-      {"name":"message.features.dep_hour","type":"bigint"},
-      {"name":"message.features.Late","type":"string"},
-      {"name":"message.features.Dest","type":"string"},
-      {"name":"message.features.dep_dow","type":"bigint"},
-      {"name":"message.features.AirTime","type":"bigint"},
-      {"name":"message.features.UniqueCarrier","type":"string"},
-      {"name":"message.features.Late_avg","type":"double"},
-      {"name":"message.features.dep_month","type":"bigint"},
-      {"name":"message.features.dep_woy","type":"bigint"},
-      {"name":"message.features.Distance","type":"bigint"}
+      {"name":"feature_name","type":"string"},
+      {"name":"feature_value","type":"string"}
     ],
     "userModified": true
   },
