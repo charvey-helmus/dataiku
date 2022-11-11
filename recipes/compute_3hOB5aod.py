@@ -95,8 +95,8 @@ else:
     saved_model = project.get_saved_model(dataiku.get_custom_variables()["saved_model_id"])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-mlflow_version = saved_model.import_mlflow_version_from_managed_folder(dataiku.get_custom_variables()["custom_model_version"], "3hOB5aod", 'let_s_autolog/2022_11_11T00_07_39/artifacts/model',code_env_name="mlflow")
+mlflow_version = saved_model.import_mlflow_version_from_managed_folder(dataiku.get_custom_variables()["custom_model_version"], "3hOB5aod", 'experiment_2/my_run_SBH/artifacts/model',code_env_name="mlflow")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-mlflow_version.set_core_metadata(SCHEMA['target'], class_labels=["false", "true"], get_features_from_dataset="flight_data")
-mlflow_version.evaluate("flight_data")
+mlflow_version.set_core_metadata(SCHEMA['target'], class_labels=["False", "True"], get_features_from_dataset="flight_ground_truth_prepared")
+mlflow_version.evaluate("flight_ground_truth_prepared")
