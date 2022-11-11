@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "mlflow_model",
   "contentType": "mlflow_python/prediction/py_memory",
-  "activeVersion": "1",
+  "activeVersion": "2",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -2858,11 +2858,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668121083369
+    "lastModifiedOn": 1668190207750
   },
   "tags": [],
   "customFields": {},
