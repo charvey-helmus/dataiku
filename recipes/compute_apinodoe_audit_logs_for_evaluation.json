@@ -40,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192555963
+    "lastModifiedOn": 1668192713145
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,6 +53,7 @@
     },
     "lastModifiedOn": 1668192519038
   },
+  "shortDesc": "remove fully empty columns",
   "tags": [],
   "customFields": {},
   "checklists": {
