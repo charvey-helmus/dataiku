@@ -27,8 +27,79 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "message.savedModel.projectKey"
+        ],
+        "values": [
+          "MLFLOWO16N"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MultiColumnByPrefixFold",
+      "params": {
+        "columnNamePattern": "message\\.features\\..*",
+        "columnNameColumn": "feature_name",
+        "foldRemoveFoldedColumns": true,
+        "columnContentColumn": "feature_value"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "feature_name",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "message.features.",
+        "outColPrefix": "feature_name_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "Pivot",
+      "params": {
+        "labelsColumn": "feature_name_0",
+        "otherColumnsAction": "KEEP_IF_CONSTANT",
+        "indexColumn": "timestamp",
+        "valuesColumn": "feature_value"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +125,88 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "FlightNum": 100,
+    "Origin": 100,
+    "message.serviceId": 169,
+    "dep_dow": 100,
+    "logger": 176,
+    "message.result.ignored": 180,
+    "AirTime": 100,
+    "message.apiContext.serviceGeneration": 285,
+    "message.features.FlightNum": 210,
+    "message.features.Distance": 203,
+    "message.features.join_pages_visited": 278,
+    "feature_value": 113,
+    "message.timing.preparation": 210,
+    "message.features.join_campain": 233,
+    "message.features.UniqueCarrier": 240,
+    "message.savedModel.projectKey": 253,
+    "mdc.apiCall": 300,
+    "feature_name_00": 128,
+    "message.features.dep_dow": 195,
+    "message.features.price_first_item_purchased": 300,
+    "Late_avg": 148,
+    "message.xForwardedFor": 211,
+    "Distance": 106,
+    "message.originalIP": 176,
+    "message.features.dep_woy": 195,
+    "feature_name": 225,
+    "UniqueCarrier": 113,
+    "message.timing.wait": 158,
+    "message.features.Dest": 173,
+    "message.msgType": 155,
+    "message.timing.postProcessing": 233,
+    "message.savedModel.modelVersion": 248,
+    "message.auditTopic": 176,
+    "message.features.gender": 188,
+    "message.features.AirTime": 195,
+    "topic": 106,
+    "message.features.Late": 173,
+    "message.timing.enrich": 173,
+    "message.apiContext.serviceId": 246,
+    "message.timing.predictionPredict": 255,
+    "message.auditRoutingKey": 300,
+    "message.features.dep_hour": 203,
+    "dep_hour": 100,
+    "message.features.age": 165,
+    "message.endpointId": 176,
+    "message.features.dep_month": 210,
+    "mdc.endpointId": 155,
+    "dep_month": 100,
+    "message.features.join_ip": 195,
+    "message.service": 155,
+    "mdc.serviceId": 141,
+    "message.clientIP": 162,
+    "feature_name_prepped0": 173,
+    "message.apiContext.endpointId": 253,
+    "message.serviceGenerationId": 218,
+    "message.timing.prediction": 203,
+    "message.callPath": 300,
+    "message.features.join_ip_country": 255,
+    "message.securityAccess": 180,
+    "timestamp": 211,
+    "severity": 106,
+    "message.batchIdx": 135,
+    "Dest": 100,
+    "Late": 100,
+    "message.features.customer_id": 225,
+    "message.result.prediction": 225,
+    "message.features.Origin": 188,
+    "message.features.Late_avg": 225,
+    "dep_woy": 100,
+    "message.apiDeployerDeployment.deploymentId": 490,
+    "message.apiDeployerDeployment.infraId": 300,
+    "message.savedModel.savedModelId": 248,
+    "message.batchSize": 143,
+    "feature_name_0": 120,
+    "message.savedModel.fullModelId": 300,
+    "message.timing.preProcessing": 225,
+    "message.apiDeployerDeployment.publishedServiceId": 300,
+    "message.apinodeQueryType": 218,
+    "apiNode": 300,
+    "callTime": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
