@@ -1,7 +1,28 @@
 {
   "name": "feedback loop",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "apinodoe_audit_logs_for_evaluation",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_apinodoe_audit_logs_for_evaluation",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "apinode_audit_logs_current_project",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_apinode_audit_logs_current_project",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "apinode_audit_logs",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
