@@ -205,11 +205,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668191447394
+    "lastModifiedOn": 1668781368123
   },
   "creationTag": {
     "versionNumber": 0,
