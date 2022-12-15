@@ -5,7 +5,7 @@
   "params": {
     "envSelection": {
       "envMode": "EXPLICIT_ENV",
-      "envName": "mlflow"
+      "envName": "mlflow_latest"
     },
     "containerSelection": {
       "containerMode": "NONE",
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668362063074
+    "lastModifiedOn": 1671118699692
   },
   "creationTag": {
     "versionNumber": 0,
