@@ -101,3 +101,21 @@ project.update_variables({"custom_model_version": int(dataiku.get_custom_variabl
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 mlflow_version.set_core_metadata(SCHEMA['target'], class_labels=["False", "True"], get_features_from_dataset="flight_ground_truth_prepared")
 mlflow_version.evaluate("flight_ground_truth_prepared")
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+'''
+#extra testing to confirm if i can download a file from the managed folder in question from s3
+import dataiku
+handle = dataiku.Folder("3hOB5aod")
+# pass a partition identifier if the folder is partitioned
+paths = handle.list_paths_in_partition()
+paths
+
+with handle.get_download_stream("experiment_2/my_run_jHL/artifacts/model/conda.yaml") as f:
+    data = f.read()
+    
+output_handle = dataiku.Folder("WISPen39")
+
+with output_handle.get_writer("output.yaml") as w:
+    w.write(data)
+    '''
