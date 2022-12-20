@@ -71,19 +71,24 @@
   },
   "displayParams": {
     "pinnedMetrics": [],
-    "yLabels": [],
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name",
+      "referenceDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1668192655106
+    "lastModifiedOn": 1671573895667
   },
   "creationTag": {
     "versionNumber": 0,
