@@ -44,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chris.helmus@dataiku.com"
     },
-    "lastModifiedOn": 1673389195703
+    "lastModifiedOn": 1673389196346
   },
   "creationTag": {
     "versionNumber": 0,
