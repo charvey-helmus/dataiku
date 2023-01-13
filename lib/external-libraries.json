@@ -4,6 +4,10 @@
       "remote": "git@github.com:charvey-helmus/dataiku",
       "checkout": "refs/heads/main",
       "remotePath": "",
+      "lastHash": "e8bd34e6c3731a9969a6571ed18e4fbcdcdb472e",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
